@@ -1,0 +1,58 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.res-card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.search {
+  padding: 10px;
+}
+
+.card-logo {
+  width: 100%;
+}
+
+.res-container, .shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  width: 150px;
+  height: 300px;
+  margin: 20px;
+}
+
+.login-btn {
+  width: auto;
+  height: auto;
+  margin: 0 20px;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
