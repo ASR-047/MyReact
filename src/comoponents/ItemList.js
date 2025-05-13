@@ -33,7 +33,7 @@ const ItemList = ({ items }) => {
   const cartItems = useSelector((state) => state.cart.items);
 
   const handleAddItem = (item) => {
-    dispatch(addItem(item));
+    dispatch(addItem(item)); //here item is the action.payload
   };
 
   const handleRemoveItem = (item) => {

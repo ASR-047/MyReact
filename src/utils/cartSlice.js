@@ -24,18 +24,23 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
+
+//this slice (cartSlice) is a function that takes a configuration to create slice
 const cartSlice = createSlice({
-  name: "cart",
+  name: "cart", //name of the slice
   initialState: {
     items: [],
   },
-  reducers: {
+  reducers: { //we will create reducres and actions here
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      //we are directly mutating state here.
+      state.items.push(action.payload); //The payload is the data that comes with an action when it's dispatched.
+      //  It's the "content" or "information" that the action carries to the reducer.
     },
     // removeItem: (state) => {
     //   state.items.pop();
     // },
+
     removeItem: (state, action) => {
       const index = state.items.findIndex(
         (item) => item.card.info.id === action.payload.card.info.id
@@ -44,6 +49,12 @@ const cartSlice = createSlice({
         state.items.splice(index, 1); // Remove one matching item
       }
     },
+
+    // removeItem : (state,action) => {
+    //           const index = action.payload.card.info.id;
+    //           state.items = state.items.filter( item => item.card.info.id !== index);
+    // },
+    
     clearCart: (state) => {
       state.items = [];
     },

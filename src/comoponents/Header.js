@@ -11,6 +11,7 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
 
+  //subscribing to the store using selector
 const cartItems = useSelector((store) => store.cart.items)
 
   const { loggedInUser } = useContext(UserContext);

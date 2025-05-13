@@ -2999,38 +2999,41 @@ const AppLayout = ()=>{
     // routes based on the path 
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
         store: (0, _appStoreDefault.default),
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
-            value: {
-                loggedInUser: userName
-            },
-            children: [
-                " ",
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "app",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 50,
-                            columnNumber: 7
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 51,
-                            columnNumber: 7
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/app.js",
-                    lineNumber: 49,
-                    columnNumber: 5
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/app.js",
-            lineNumber: 46,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
+                value: {
+                    loggedInUser: userName
+                },
+                children: [
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "app",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 50,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 51,
+                                columnNumber: 7
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/app.js",
+                        lineNumber: 49,
+                        columnNumber: 5
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/app.js",
+                lineNumber: 46,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/app.js",
         lineNumber: 45,
         columnNumber: 5
@@ -27415,6 +27418,7 @@ const Header = ()=>{
     _s();
     const [btnName, setBtnName] = (0, _react.useState)("Login");
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
+    //subscribing to the store using selector
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     const { loggedInUser } = (0, _react.useContext)((0, _userContextDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27427,12 +27431,12 @@ const Header = ()=>{
                     src: (0, _constants.LOGO_URL)
                 }, void 0, false, {
                     fileName: "src/comoponents/Header.js",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/comoponents/Header.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27448,7 +27452,7 @@ const Header = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 24,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27458,12 +27462,12 @@ const Header = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/comoponents/Header.js",
-                                lineNumber: 26,
+                                lineNumber: 27,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 25,
+                            lineNumber: 26,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27473,12 +27477,12 @@ const Header = ()=>{
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "src/comoponents/Header.js",
-                                lineNumber: 29,
+                                lineNumber: 30,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27488,12 +27492,12 @@ const Header = ()=>{
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "src/comoponents/Header.js",
-                                lineNumber: 32,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 31,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27503,12 +27507,12 @@ const Header = ()=>{
                                 children: "Grocery"
                             }, void 0, false, {
                                 fileName: "src/comoponents/Header.js",
-                                lineNumber: 35,
+                                lineNumber: 36,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 34,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27522,12 +27526,12 @@ const Header = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/comoponents/Header.js",
-                                lineNumber: 39,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27538,7 +27542,7 @@ const Header = ()=>{
                             children: btnName
                         }, void 0, false, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27549,24 +27553,24 @@ const Header = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/comoponents/Header.js",
-                            lineNumber: 48,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/comoponents/Header.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/comoponents/Header.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/comoponents/Header.js",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
@@ -39973,6 +39977,7 @@ parcelHelpers.export(exports, "addItem", ()=>addItem);
 parcelHelpers.export(exports, "removeItem", ()=>removeItem);
 parcelHelpers.export(exports, "clearCart", ()=>clearCart);
 var _toolkit = require("@reduxjs/toolkit");
+//this slice (cartSlice) is a function that takes a configuration to create slice
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
@@ -39980,7 +39985,9 @@ const cartSlice = (0, _toolkit.createSlice)({
     },
     reducers: {
         addItem: (state, action)=>{
-            state.items.push(action.payload);
+            //we are directly mutating state here.
+            state.items.push(action.payload); //The payload is the data that comes with an action when it's dispatched.
+        //  It's the "content" or "information" that the action carries to the reducer.
         },
         // removeItem: (state) => {
         //   state.items.pop();
@@ -39989,6 +39996,10 @@ const cartSlice = (0, _toolkit.createSlice)({
             const index = state.items.findIndex((item)=>item.card.info.id === action.payload.card.info.id);
             if (index !== -1) state.items.splice(index, 1); // Remove one matching item
         },
+        // removeItem : (state,action) => {
+        //           const index = action.payload.card.info.id;
+        //           state.items = state.items.filter( item => item.card.info.id !== index);
+        // },
         clearCart: (state)=>{
             state.items = [];
         }
@@ -40820,7 +40831,7 @@ const ItemList = ({ items })=>{
     const dispatch = (0, _reactRedux.useDispatch)();
     const cartItems = (0, _reactRedux.useSelector)((state)=>state.cart.items);
     const handleAddItem = (item)=>{
-        dispatch((0, _cartSlice.addItem)(item));
+        dispatch((0, _cartSlice.addItem)(item)); //here item is the action.payload
     };
     const handleRemoveItem = (item)=>{
         dispatch((0, _cartSlice.removeItem)(item));

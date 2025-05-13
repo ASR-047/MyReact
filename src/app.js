@@ -42,7 +42,7 @@ useEffect(() => {
 //this outlet will be filled with child routes so that the header keeps intact and the outlet will be replaced with the children 
 // routes based on the path 
   return (
-    <Provider store ={appStore}>
+    <Provider store ={appStore}> {/* providing the store to the app and passing the store as props*/}
     <UserContext.Provider value={{loggedInUser : userName}}> {/*UserContext.Provideris used to provide the context to the whole
     app the loggedInUser value will not be default value and here i am changing the default value of loggedInUser based on the
      above code in useEffect*/}
